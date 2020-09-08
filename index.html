@@ -54,10 +54,12 @@
     var spacebar;
     var stars;
     var starsCount = 3;
+    var levelCount = 1;
     var i =0;
     var background;
     var score = 0;
     var scoreText;
+    var levelText;
 
     function preload ()
     {
@@ -86,6 +88,8 @@
         platforms.create(50, 350, 'ground');
         platforms.create(750, 300, 'ground');
         platforms.create(300, 180, 'ground').setScale(0.5).refreshBody();
+        platforms.create(0, 250, 'ground').setScale(0.25, 0.65).setOrigin(0,0).refreshBody();
+
 
         player = this.physics.add.sprite(50, 450, 'dude');
         player.setBounce(0.2);
@@ -133,7 +137,11 @@
             fontSize: '32px',
             color: 'blue',
           //  fill: 'red'
-        })
+        });
+        levelText = this.add.text(16,48, 'Level: 1',{
+            fontSize: '32px',
+            color: 'blue',
+        });
     }
 
     function update ()
@@ -172,12 +180,21 @@
         for(i=1; i<=starsCount; i++) {
             stars.create(Phaser.Math.Between(10, 790), Phaser.Math.Between(10, 500), 'star');
         }
-        starsCount++;
+        if(starsCount <= levelCount*3){
+            starsCount++;
+        }else {
+            levelCount++;
+            levelText.setText('Level: ' + levelCount);
+        }
         stars.children.iterate(function (child) {
 
             child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
 
         });
+    }
+    function generateBomb() {
+        if(levelCount)
+
     }
 
 </script>
