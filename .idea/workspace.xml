@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f55dc2c-943b-4334-9635-052d559bb6bd" name="Default Changelist" comment="Update 19.10.2020 10:11">
+    <list default="true" id="3f55dc2c-943b-4334-9635-052d559bb6bd" name="Default Changelist" comment="Update 19.10.2020 10:29">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <workItem from="1599499336205" duration="237000" />
       <workItem from="1599583868566" duration="2985000" />
       <workItem from="1603093985112" duration="5000" />
-      <workItem from="1603093999028" duration="1630000" />
+      <workItem from="1603093999028" duration="2619000" />
     </task>
     <task id="LOCAL-00001" summary="Update 07.09.2020 09:50">
       <created>1599465203484</created>
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603095088672</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update 19.10.2020 10:29">
+      <created>1603096167059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603096167059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +139,8 @@
     <MESSAGE value="Update 19.10.2020 09:53" />
     <MESSAGE value="Update 19.10.2020 10:07" />
     <MESSAGE value="Update 19.10.2020 10:11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 19.10.2020 10:11" />
+    <MESSAGE value="Update 19.10.2020 10:29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 19.10.2020 10:29" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1603094869010">
