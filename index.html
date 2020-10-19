@@ -6,6 +6,9 @@
     <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.js"></script>
 <!--    <script src="JavaScript/phaser.js"></script>-->
 <!--    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>-->
+<!--
+https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6
+-->
     <style type="text/css">
         body {
             margin: 0;
@@ -60,6 +63,9 @@
     var score = 0;
     var scoreText;
     var levelText;
+    var bombsCount = 0;
+    var bomb;
+    var gameOver = false;
 
     function preload ()
     {
@@ -124,14 +130,17 @@
         //this.physics.add.collider(stars, platforms);
 
         stars = this.physics.add.group()
+        bombs = this.physics.add.group()
 
         generateStars();
 
         this.physics.add.collider(stars, platforms);
-
+        this.physics.add.collider(bombs, platforms);
+        this.physics.add.collider(bombs, bombs);
 
 
         this.physics.add.overlap(player, stars, collectStar, null, this);
+        this.physics.add.collider(player, bombs, playerHit, null, this)
 
         scoreText = this.add.text(16,16, 'score: 0', {
             fontSize: '32px',
@@ -146,6 +155,9 @@
 
     function update ()
     {
+        if(gameOver){
+            return;
+        }
         if(A.isDown){
             player.setVelocityX(-160);
             player.anims.play('left', true);
@@ -172,8 +184,9 @@
         }
         scoreText.setText('Score: ' + score);
         console.log(stars.countActive(true));
-        if (stars.countActive(true) == 0) {
+        if (stars.countActive(true) === 0) {
             generateStars();
+            generateBomb();
          }
     }
     function generateStars(){
@@ -193,8 +206,27 @@
         });
     }
     function generateBomb() {
-        if(levelCount)
-
+            console.log("BombsCount:", bombsCount)
+            if(player.x <= 450){
+                console.log(player.x)
+                bomb = bombs.create(Phaser.Math.Between(550, 790), Phaser.Math.Between(10, 500), 'bomb');
+                console.log("X mniejszy lub równy 450")
+                bombsCount++;
+            }else if(player.x > 450){
+                bomb = bombs.create(Phaser.Math.Between(10, 350), Phaser.Math.Between(10, 500), 'bomb');
+                console.log("X większy od 450")
+                bombsCount++;
+            }
+            bomb.setBounce(1);
+            bomb.setCollideWorldBounds(true);
+            bomb.setVelocity(Phaser.Math.Between(-300, 300), 20);
+            bomb.allowGravity = false;
+    }
+    function playerHit(player, bomb){
+        this.physics.pause();
+        player.anims.play('turn');
+        player.setTint(0xff0000);
+        gameOver = true;
     }
 
 </script>

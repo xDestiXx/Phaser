@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f55dc2c-943b-4334-9635-052d559bb6bd" name="Default Changelist" comment="">
+    <list default="true" id="3f55dc2c-943b-4334-9635-052d559bb6bd" name="Default Changelist" comment="Update 19.10.2020 10:11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -24,30 +42,20 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,6 +78,8 @@
       <workItem from="1599466316485" duration="977000" />
       <workItem from="1599499336205" duration="237000" />
       <workItem from="1599583868566" duration="2985000" />
+      <workItem from="1603093985112" duration="5000" />
+      <workItem from="1603093999028" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="Update 07.09.2020 09:50">
       <created>1599465203484</created>
@@ -85,22 +95,63 @@
       <option name="project" value="LOCAL" />
       <updated>1599466217813</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update 19.10.2020 09:51">
+      <created>1603093913001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603093913001</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update 19.10.2020 10:11">
+      <created>1603095088672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603095088672</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 07.09.2020 09:50" />
     <MESSAGE value="Update 07.09.2020 10:10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 07.09.2020 10:10" />
+    <MESSAGE value="Update 19.10.2020 09:51" />
+    <MESSAGE value="Update 19.10.2020 09:53" />
+    <MESSAGE value="Update 19.10.2020 10:07" />
+    <MESSAGE value="Update 19.10.2020 10:11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 19.10.2020 10:11" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="520" y="236" key="#Notifications" timestamp="1603094869010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="520" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1603094869010" />
     <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1599466215536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599466215536" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1603095055662">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603095055662" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1603095063285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603095063285" />
     <state x="65" y="89" key="new project wizard" timestamp="1599466704962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
